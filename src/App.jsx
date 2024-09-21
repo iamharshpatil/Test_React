@@ -1,9 +1,11 @@
+import Home from "./Home"
+import Nav from "./Nav"
+
 const App = ()=>{
   return (
   <div>
-    <h1>helo</h1>
-    <h2>Harshwardhan</h2>
-    <h3>Patil</h3>
+   <Home/>
+   <Nav/>
   </div>  ) 
 }
 
