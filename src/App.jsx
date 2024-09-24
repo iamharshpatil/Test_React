@@ -1,23 +1,32 @@
-import About from "./About";
-import Home from "./Home";
-import Nav from "./Nav";
+
 
 const App = () => {
-  let user = [
-    {
-      name: "Harshwardhan",
-      age: 27,
-      city: "Bangalore",
-    },
-    { name: " Wang", 
-      age: 25,
-       city: "bhopal" },
-  ];
+  const getinfo = () =>{
+    console.log("helo World")
+  }
 
-  let r =  user.map((u,i)=> <h1 key={i}>{u.name}</h1> );
-  return <div>
-        {r}
-  </div>;
+  const takeinfo = (info) =>{
+    console.log(info)
+  }
+
+
+  return (
+    <div>
+      <button onClick={getinfo} class =" rounded m-5 py-2 px-4 bg-red-400">
+        Click here
+      </button>
+      
+
+      <br />
+
+      <button onClick={()=>takeinfo("helo")} class =" rounded m-5 py-2 px-4 bg-red-400">
+        Press here
+      </button>
+    </div>
+    
+
+    
+  )
 };
 
 export default App;
