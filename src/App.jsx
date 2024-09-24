@@ -1,27 +1,19 @@
+import React from "react";
+import { useState } from "react";
 
 
 const App = () => {
-  const getinfo = () =>{
-    console.log("helo World")
-  }
-
-  const takeinfo = (info) =>{
-    console.log(info)
-  }
-
+  
+  const [user, setuser] = useState("Harsh");
 
   return (
     <div>
-      <button onClick={getinfo} class =" rounded m-5 py-2 px-4 bg-red-400">
+      
+      <h1 className="text-3xl p-4">{user}</h1>
+      <button  onClick={()=> setuser('Harsh ji Patil')} className=" rounded m-5 py-2 px-4 bg-red-400">
         Click here
       </button>
       
-
-      <br />
-
-      <button onClick={()=>takeinfo("helo")} class =" rounded m-5 py-2 px-4 bg-red-400">
-        Press here
-      </button>
     </div>
     
 
