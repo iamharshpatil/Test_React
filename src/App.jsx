@@ -4,15 +4,16 @@ import { useState } from "react";
 
 const App = () => {
   
-  const [user, setuser] = useState("Harsh");
+  const [Time, setTime] = useState(new Date().toLocaleTimeString());
+
+  setInterval(() => {
+    setTime(new Date().toLocaleTimeString());
+  }, 1000);
 
   return (
     <div>
       
-      <h1 className="text-3xl p-4">{user}</h1>
-      <button  onClick={()=> setuser('Harsh ji Patil')} className=" rounded m-5 py-2 px-4 bg-red-400">
-        Click here
-      </button>
+     <h1 className="text-[10vw]">{Time}</h1>
       
     </div>
     
