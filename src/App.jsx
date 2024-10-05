@@ -1,28 +1,19 @@
-import React from "react";
-import { useState } from "react";
+import Footer from "./assets/components/Footer"
+import Navigation from "./assets/components/Navigation"
+import Section from "./assets/components/Section"
+import Wrapper from "./assets/utils/Wrapper"
 
 
-const App = () => {
-
-  const [username,setusername] = useState("")
-  
- const submitH = (e)=>{ 
-   e.preventDefault();
-   console.log(username)
- }
-
-
+function App() {
   return (
-    <div>
-      <form  onSubmit={submitH}>
-      <input className=" border border-black" placeholder="Name" type="text" onChange={(e)=> setusername(e.target.value)} value={username} name="username" />
-    <br />
-    <input type="submit"/>
-      </form>
-    
-    </div>
+     
+    <Wrapper>
+      <Navigation/>
+      <Section/>
+      <Footer/>
+    </Wrapper>
     
   )
-};
+}
 
-export default App;
+export default App
