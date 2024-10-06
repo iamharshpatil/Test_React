@@ -7,10 +7,13 @@ const App = () => {
     const [app, setapp] = useState('Parent Component')
     const [nav, setnav] = useState('Nav Component')
     const [footer, setfooter] = useState('Footer Component')
-
+    const ChangeH = () => {
+      setnav('New Nav Component')
+    }
   return (
     <div>
-       <Navigation nav={nav}/>
+       <Navigation nav={nav} setnav={setnav}/>
+       <button onClick={ChangeH}>Click </button>
        <Footer Footer={footer}/>
     </div>
   )
