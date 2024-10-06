@@ -1,8 +1,10 @@
 import React from 'react'
 
-function Footer() {
+function Footer(props) {
   return (
-    <div>Footer</div>
+    <div>
+      <h1>{props.Footer}</h1>
+    </div>
   )
 }
 

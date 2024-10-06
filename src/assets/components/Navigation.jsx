@@ -1,8 +1,9 @@
-import React from 'react'
 
-function Navigation() {
+function Navigation(props) {
   return (
-    <div>Navigation</div>
+    <div>
+      <h1>{props.nav}</h1>
+    </div>
   )
 }
 

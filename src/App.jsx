@@ -1,18 +1,18 @@
-import Footer from "./assets/components/Footer"
-import Navigation from "./assets/components/Navigation"
-import Section from "./assets/components/Section"
-import Wrapper from "./assets/utils/Wrapper"
+import Navigation from './assets/components/Navigation'
+import { useState } from 'react'
+import Footer from './assets/components/Footer'
 
 
-function App() {
+const App = () => {
+    const [app, setapp] = useState('Parent Component')
+    const [nav, setnav] = useState('Nav Component')
+    const [footer, setfooter] = useState('Footer Component')
+
   return (
-     
-    <Wrapper>
-      <Navigation/>
-      <Section/>
-      <Footer/>
-    </Wrapper>
-    
+    <div>
+       <Navigation nav={nav}/>
+       <Footer Footer={footer}/>
+    </div>
   )
 }
 
