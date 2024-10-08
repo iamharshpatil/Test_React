@@ -1,9 +1,9 @@
-import React from 'react'
+import css from './Footer.module.css'
 
-function Footer(props) {
+function Footer() {
   return (
     <div>
-      <h1>Footer</h1>
+      <h1 className={css.heading} >Footer</h1>
     </div>
   )
 }
