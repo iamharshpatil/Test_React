@@ -2,7 +2,7 @@
 function Navigation(props) {
   return (
     <div>
-      <h1>{props.nav}</h1>
+      <h1>Navigation</h1>
     </div>
   )
 }
