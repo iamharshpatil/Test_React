@@ -10,8 +10,10 @@ const App = () => {
         <Navigation />
       </Wapper>
       
-      
+      <Wapper>
         <Footer />
+      </Wapper>
+      
     </>
   );
 };
