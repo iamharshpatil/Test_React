@@ -1,21 +1,9 @@
-import Navigation from "./assets/components/Navigation";
-import Wapper from "./assets/utils/Wapper";
-import { useState } from "react";
-import Footer from "./assets/components/Footer";
+import React from 'react'
 
-const App = () => {
+function App() {
   return (
-    <>
-      <Wapper>
-        <Navigation />
-      </Wapper>
-      
-      <Wapper>
-        <Footer />
-      </Wapper>
-      
-    </>
-  );
-};
+    <div>App</div>
+  )
+}
 
-export default App;
+export default App
