@@ -1,11 +1,13 @@
+import { createContext } from "react"
 
+export const datacontext =  createContext(null)
 
-function Wrapper(props.children) {
-
+function Wrapper(props) {
+   const [data, setdata] = useState("important Data ")
   return (
-    <div>
+    <datacontext.Provider value={[data, setdata]}>
       {props.children}
-    </div>
+    </datacontext.Provider>
   )
 }
 
