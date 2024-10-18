@@ -1,11 +1,13 @@
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
-import Wrapper from "./assets/utils/Wrapper";
+import { BrowserRouter } from "react-router-dom";
+import "./assets/index.css"
+
 
 
 createRoot(document.getElementById('root')).render(
-  <Wrapper>
+  <BrowserRouter>
     <App />
-  </Wrapper>
-
+  </BrowserRouter>
+  
 )
