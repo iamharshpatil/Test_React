@@ -1,5 +1,5 @@
-import axios from "axios";
+import axios from 'axios';
 
-const instance = {
- 
-}
+export default axios.create({
+  baseURL: `http://jsonplaceholder.typicode.com/`
+});
